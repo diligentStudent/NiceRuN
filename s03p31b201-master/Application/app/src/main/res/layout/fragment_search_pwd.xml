@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".login.SearchPwdFragment">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_xlarge3"
+            android:background="@drawable/textshape"
+            android:hint="이메일"
+            android:imeOptions="actionSend"
+            android:inputType="textEmailAddress"
+            android:layout_marginRight="@dimen/spacing_small2"
+            android:layout_weight="3"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인증번호 전송"
+            android:id="@+id/emailBtn" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/key"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_xlarge3"
+            android:background="@drawable/textshape"
+            android:hint="인증번호"
+            android:imeOptions="actionSend"
+            android:enabled="false"
+            android:inputType="textEmailAddress"
+            android:layout_weight="3"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_small"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="인증번호 확인"
+            android:id="@+id/keyBtn" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <EditText
+        android:id="@+id/password"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_xlarge3"
+        android:background="@drawable/textshape"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:hint="비밀번호 (6자 이상)"
+        android:imeOptions="actionSend"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_xlarge3"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:background="@drawable/textshape"
+        android:hint="비밀번호 확인"
+        android:imeOptions="actionSend"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:enabled="false"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 변경"
+        android:id="@+id/passwordBtn"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

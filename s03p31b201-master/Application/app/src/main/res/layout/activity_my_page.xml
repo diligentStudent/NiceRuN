@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/spacing_medium"
+    tools:context=".login.SignInFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/more"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_UploadPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="사진 선택"
+            android:onClick="onClick"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:imeOptions="actionSend"
+            android:inputType="textEmailAddress"
+            android:layout_weight="3"/>
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="성"
+            android:imeOptions="actionSend"
+            android:inputType="textEmailAddress"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="생년월일 입력(ex 2020-11-16)"
+        android:imeOptions="actionSend"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="주 활동 지역 입력 (ex 대전광역시)"
+        android:imeOptions="actionSend"
+        android:inputType="textEmailAddress" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="키 (ex 180)"
+            android:imeOptions="actionSend"
+            android:inputType="number"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="몸무게 (ex 72)"
+            android:imeOptions="actionSend"
+            android:inputType="number"
+            android:layout_weight="2"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    <EditText
+        android:id="@+id/goaldist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="목표 Km 입력 (ex 10)"
+        android:imeOptions="actionSend"
+        android:inputType="number" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/updateBtn"
+        android:text="수정 완료"
+        android:onClick="onClick"
+        android:layout_margin="@dimen/spacing_medium"/>
+
+
+
+
+
+</LinearLayout>

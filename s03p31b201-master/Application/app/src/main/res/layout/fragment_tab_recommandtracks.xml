@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.canlendar.CalendarMainFragment"
+    android:id="@+id/recommand_view">
+
+    <TextView
+        android:id="@+id/whereLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size_medium2"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recommand_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/whereLocation"
+        />
+
+    <TextView
+        android:id="@+id/recommand_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/whereLocation"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/recommand_no_data"
+        android:textColor="@color/nicerun_blue"
+        android:textSize="@dimen/text_size_medium2"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

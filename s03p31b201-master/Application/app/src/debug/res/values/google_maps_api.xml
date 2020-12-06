@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=DA:31:5B:07:89:3F:FF:33:B9:1A:B0:19:97:09:66:86:C8:7B:8F:9B%3Bcom.example.NiceRun.ui.running
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.example.NiceRun.ui.running
+
+    SHA-1 certificate fingerprint:
+    DA:31:5B:07:89:3F:FF:33:B9:1A:B0:19:97:09:66:86:C8:7B:8F:9B
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBavgLLmNaJk7oevS1g_qU3Xg8PteAoUC4</string>
+</resources>

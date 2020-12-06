@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".login.SignUpFragment"
+        android:id="@+id/scroll">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".login.SignUpFragment"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginRight="@dimen/spacing_medium"
+        android:id="@+id/e">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="아이디 (SSAFY@ssafy.com)"
+            android:imeOptions="actionSend"
+            android:inputType="textEmailAddress"
+            android:layout_weight="3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중복확인"
+            android:id="@+id/emailBtn" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호 (6자 이상)"
+            android:imeOptions="actionSend"
+            android:inputType="textPassword" />
+
+    <EditText
+            android:id="@+id/password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호 확인"
+            android:imeOptions="actionSend"
+            android:inputType="textPassword" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+            android:id="@+id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+        android:layout_weight="3"
+        />
+
+    <EditText
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="성"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+        android:layout_weight="2"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <EditText
+            android:id="@+id/birthday"
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="생년월일 (ex 19941108)"
+            android:imeOptions="actionSend"
+            android:inputType="number" />
+
+    <RadioGroup
+            android:id="@+id/gender"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            >
+
+        <RadioButton
+                android:layout_weight="1"
+                android:text="남"
+                android:id="@+id/male"
+                android:layout_width="0dp"
+                android:buttonTint="@color/nicerun_blue"
+                android:layout_height="wrap_content" />
+
+        <RadioButton
+                android:layout_weight="1"
+                android:text="여"
+                android:id="@+id/female"
+                android:buttonTint="@color/nicerun_blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+    </RadioGroup>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="주 활동 지역 입력(ex 대전광역시)"
+            android:imeOptions="actionSend"
+            android:inputType="text" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="키 (ex 180)"
+            android:imeOptions="actionSend"
+            android:inputType="number"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="몸무게 (ex 72)"
+            android:imeOptions="actionSend"
+            android:inputType="number"
+            android:layout_weight="2"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <EditText
+            android:id="@+id/goaldist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="하루 목표 Km 입력 (ex 10)"
+            android:imeOptions="actionSend"
+            android:inputType="number" />
+
+
+    <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_medium"
+            android:text="회원가입" />
+
+
+</LinearLayout>
+</ScrollView>
